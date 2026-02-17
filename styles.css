@@ -554,7 +554,7 @@ ul {
 
 /* ===== About Section ===== */
 .about {
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--white);
 }
 
@@ -660,7 +660,7 @@ ul {
 
 /* ===== Destinations Section ===== */
 .destinations {
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--light-bg);
 }
 
@@ -752,11 +752,6 @@ ul {
 
 .destination-card:not(.large) .card-price span {
   font-size: 18px;
-}
-
-.destinations-cta {
-  text-align: center;
-  margin-top: 50px;
 }
 
 /* ===== Services Section ===== */
@@ -885,76 +880,6 @@ ul {
 .author-info span {
   font-size: 13px;
   color: var(--text-light);
-}
-
-/* ===== Partners Section ===== */
-.partners-section {
-  padding: 120px 0;
-  background: var(--light-bg);
-}
-
-.partners-header {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.partners-header .section-subtitle {
-  margin-top: 15px;
-}
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.partner-card {
-  background: var(--white);
-  padding: 40px 30px;
-  border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
-  box-shadow: var(--shadow-sm);
-  border: 2px solid transparent;
-}
-
-.partner-card:hover {
-  box-shadow: var(--shadow-lg);
-  border-color: var(--primary-color);
-  transform: translateY(-5px);
-}
-
-.partner-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  color: var(--text-light);
-  transition: var(--transition);
-}
-
-.partner-card:hover .partner-logo {
-  color: var(--primary-color);
-}
-
-.partner-logo i {
-  font-size: 48px;
-  transition: var(--transition);
-}
-
-.partner-card:hover .partner-logo i {
-  transform: scale(1.15);
-}
-
-.partner-logo span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
 }
 
 /* ===== Contact Section ===== */
@@ -1209,57 +1134,54 @@ ul {
 
 /* Benefits Section */
 .benefits-section {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .benefits-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   position: relative;
-}
-
-.benefits-header::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(255, 209, 102, 0.08) 100%);
-  border-radius: 50%;
-  z-index: -1;
 }
 
 .benefits-header .section-tag {
   background: var(--gradient-primary);
   color: var(--white);
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  font-size: 12px;
+  padding: 6px 18px;
+}
+
+.benefits-header .section-title {
+  font-size: 28px;
+  margin-bottom: 12px;
 }
 
 .benefits-text {
   color: var(--text-light);
-  font-size: 16px;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: 20px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 10px auto 0;
 }
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .benefit-card {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  padding: 35px 28px;
-  border-radius: 20px;
+  padding: 24px 20px;
+  border-radius: 16px;
   border: 2px solid transparent;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 .benefit-card::before {
@@ -1279,23 +1201,23 @@ ul {
 
 .benefit-card:hover {
   border-color: var(--primary-color);
-  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.2);
-  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+  transform: translateY(-5px);
 }
 
 .benefit-icon {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 140, 90, 0.15) 100%);
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 32px;
-  margin-bottom: 25px;
+  font-size: 24px;
+  margin: 0 auto 15px;
   position: relative;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .benefit-icon::after {
@@ -1304,19 +1226,32 @@ ul {
   width: 100%;
   height: 100%;
   background: var(--gradient-primary);
-  border-radius: 16px;
+  border-radius: 12px;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
   z-index: -1;
 }
 
 .benefit-card:hover .benefit-icon {
   color: var(--white);
-  transform: scale(1.15) rotate(10deg);
+  transform: scale(1.1) rotate(8deg);
 }
 
 .benefit-card:hover .benefit-icon::after {
   opacity: 1;
+}
+
+.benefit-content h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+}
+
+.benefit-content p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 3px 0;
 }
 
 .benefit-content h4 {
@@ -1580,9 +1515,9 @@ ul {
     margin: 0 auto;
   }
 
-  .partners-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
   }
 
   .footer-grid {
@@ -1737,15 +1672,6 @@ ul {
     max-width: 100%;
   }
 
-  .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .partner-card {
-    padding: 35px 25px;
-  }
-
   .contact-location-wrapper {
     padding: 40px 30px;
   }
@@ -1755,12 +1681,16 @@ ul {
   }
 
   .benefits-section {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+
+  .benefits-header .section-title {
+    font-size: 24px;
   }
 
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 18px;
   }
 
   .contact-form-wrapper {
@@ -1937,24 +1867,19 @@ ul {
 
   .benefits-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .benefit-card {
-    padding: 28px 22px;
-  }
-
-  .partners-grid {
-    grid-template-columns: 1fr;
     gap: 15px;
   }
 
-  .partner-card {
-    padding: 30px 20px;
+  .benefit-card {
+    padding: 20px 18px;
   }
 
-  .partner-logo i {
-    font-size: 40px;
+  .benefit-content h4 {
+    font-size: 15px;
+  }
+
+  .benefit-content p {
+    font-size: 12px;
   }
 
   .benefit-icon {
