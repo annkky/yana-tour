@@ -296,17 +296,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ===== Parallax Effect for Hero =====
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset;
-  const heroContent = document.querySelector(".hero-content");
-
-  if (heroContent && scrolled < window.innerHeight) {
-    heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-    heroContent.style.opacity = 1 - scrolled / window.innerHeight;
-  }
-});
-
 // ===== Initialize =====
 document.addEventListener("DOMContentLoaded", () => {
   // Add smooth load animation
