@@ -890,25 +890,32 @@ ul {
 
 .contact-header-section {
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .contact-header-section .section-tag {
   background: var(--gradient-primary);
   color: var(--white);
   box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  font-size: 12px;
+  padding: 6px 18px;
+}
+
+.contact-header-section .section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .contact-location-wrapper {
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  padding: 60px;
-  border-radius: 24px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
   border: 2px solid rgba(255, 107, 53, 0.1);
   position: relative;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -916,22 +923,22 @@ ul {
 .contact-location-wrapper::before {
   content: '';
   position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
   border-radius: 50%;
 }
 
 .contact-location-wrapper::after {
   content: '';
   position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(255, 209, 102, 0.15) 0%, transparent 70%);
+  bottom: -25px;
+  left: -25px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 209, 102, 0.12) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -982,44 +989,12 @@ ul {
   opacity: 1;
 }
 
-.contact-location-wrapper {
-  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  padding: 50px;
-  border-radius: 24px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 107, 53, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-location-wrapper::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
-.contact-location-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(255, 209, 102, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
 .contact-location-info h3 {
   font-family: "Playfair Display", serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   color: var(--secondary-color);
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -1028,108 +1003,149 @@ ul {
 .contact-location-info h3::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
+  width: 50px;
+  height: 3px;
   background: var(--gradient-primary);
-  margin: 15px auto 0;
+  margin: 12px auto 0;
   border-radius: 2px;
 }
 
 .location-items {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
+  margin-bottom: 25px;
   position: relative;
   z-index: 1;
 }
 
 .location-item {
   display: flex;
-  gap: 18px;
-  padding: 22px;
+  gap: 15px;
+  padding: 18px;
   background: var(--white);
-  border-radius: 14px;
+  border-radius: 12px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .location-item:hover {
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
-  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.12);
+  transform: translateY(-2px);
   border-color: rgba(255, 107, 53, 0.2);
 }
 
 .location-icon {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   background: var(--gradient-primary);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
-  font-size: 20px;
+  font-size: 18px;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 3px 10px rgba(255, 107, 53, 0.25);
   transition: all 0.3s ease;
 }
 
 .location-item:hover .location-icon {
-  transform: scale(1.1) rotate(-5deg);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  transform: scale(1.08) rotate(-5deg);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.35);
 }
 
 .location-details h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--secondary-color);
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .location-details p {
   color: var(--text-light);
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .location-social {
-  text-align: center;
-  padding-top: 30px;
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  margin-top: 22px;
   border-top: 2px solid rgba(255, 107, 53, 0.15);
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .location-social h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--secondary-color);
-  margin-bottom: 22px;
+  margin-bottom: 0;
+  flex: 0 0 auto;
 }
 
 .location-social .social-links {
-  justify-content: center;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .location-social .social-link {
-  width: 55px;
-  height: 55px;
+  width: 48px;
+  height: 48px;
   background: var(--white);
   border: 2px solid rgba(255, 107, 53, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
 .location-social .social-link:hover {
   background: var(--gradient-primary);
   border-color: var(--primary-color);
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.35);
+}
+
+.contact-footer-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 107, 53, 0.1);
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.contact-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-color);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 15px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(255, 209, 102, 0.05) 100%);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-feature i {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.contact-feature:hover {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 209, 102, 0.1) 100%);
+  transform: translateY(-2px);
 }
 
 /* Benefits Section */
@@ -1673,11 +1689,30 @@ ul {
   }
 
   .contact-location-wrapper {
-    padding: 40px 30px;
+    padding: 32px 25px;
   }
 
   .location-items {
-    gap: 20px;
+    gap: 14px 18px;
+  }
+
+  .location-social {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-social .social-links {
+    justify-content: center;
+  }
+
+  .contact-footer-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-feature {
+    justify-content: center;
   }
 
   .benefits-section {
@@ -1843,26 +1878,43 @@ ul {
   }
 
   .contact-location-wrapper {
-    padding: 30px 25px;
+    padding: 25px 20px;
   }
 
   .contact-location-info h3 {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .location-item {
-    padding: 18px;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .location-items {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .location-icon {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     font-size: 18px;
   }
 
   .location-social .social-link {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .contact-feature {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  .contact-feature i {
+    font-size: 14px;
   }
 
   .benefits-grid {
@@ -1983,31 +2035,47 @@ ul {
   }
 
   .contact-location-wrapper {
-    padding: 20px 15px;
+    padding: 18px 15px;
   }
 
   .contact-location-info h3 {
-    font-size: 20px;
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+
+  .location-social {
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+
+  .contact-footer-info {
+    margin-top: 18px;
+    padding-top: 18px;
+  }
+
+  .contact-feature {
+    font-size: 11px;
+    width: 100%;
   }
 
   .location-item {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 16px;
+    padding: 14px;
   }
 
   .location-icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     font-size: 16px;
     margin-bottom: 8px;
   }
 
   .location-social .social-link {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
   }
 }
 
