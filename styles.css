@@ -1004,6 +1004,86 @@ ul {
   transform: translateY(-3px);
 }
 
+.contact-location-wrapper {
+  background: var(--light-bg);
+  padding: 50px;
+  border-radius: var(--border-radius);
+}
+
+.contact-location-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.location-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.location-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.location-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.location-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 107, 53, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.location-details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.location-details p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.location-social {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 2px solid rgba(255, 107, 53, 0.1);
+}
+
+.location-social h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.location-social .social-links {
+  justify-content: center;
+}
+
 .contact-form-wrapper {
   background: var(--light-bg);
   padding: 50px;
@@ -1403,6 +1483,10 @@ ul {
     gap: 50px;
   }
 
+  .contact-location-wrapper {
+    padding: 30px;
+  }
+
   .contact-form-wrapper {
     padding: 30px;
   }
@@ -1550,6 +1634,24 @@ ul {
 
   .badge-number {
     font-size: 32px;
+  }
+
+  .contact-location-wrapper {
+    padding: 25px 20px;
+  }
+
+  .contact-location-info h3 {
+    font-size: 22px;
+  }
+
+  .location-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .location-icon {
+    margin-bottom: 10px;
   }
 
   .back-to-top {
