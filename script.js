@@ -2,6 +2,7 @@
 const navbar = document.getElementById("navbar");
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
+const navClose = document.getElementById("navClose");
 const backToTop = document.getElementById("backToTop");
 const contactForm = document.getElementById("contactForm");
 const heroSlides = document.querySelectorAll(".hero-slider .slide");
@@ -42,6 +43,14 @@ navToggle.addEventListener("click", () => {
     icon.classList.remove("fa-times");
     icon.classList.add("fa-bars");
   }
+});
+
+// Close mobile menu
+navClose.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+  const icon = navToggle.querySelector("i");
+  icon.classList.remove("fa-times");
+  icon.classList.add("fa-bars");
 });
 
 // Close mobile menu when clicking on a link
